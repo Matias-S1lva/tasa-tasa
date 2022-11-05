@@ -1,0 +1,24 @@
+.input-wrapper {
+  display: grid;
+  text-align: center;
+  place-items: center;
+  width: 100%;
+  opacity: 0.92;
+  z-index: 10;
+}
+.input-wrapper input {
+  margin-top: 160px;
+  width: 50%;
+  background-color: rgb(238 238 238);
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  color: rgb(240 128 128);
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: lightcoral;
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container-portada{
+  position: relative;
+  width: 100%;
+  height: 490px;
+}
+.portada {
+  box-shadow: 0px 6px 15px -2px rgb(0 0 0 / 46%);
+  -webkit-box-shadow: 0px 4px 20px 6px rgb(0 0 0 / 27%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  object-fit: cover;
+  background-image: url(./components/home.jpg);
+}
+.background-dark {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 490px;
+  background-color: black;
+  opacity: 0.2;
+}
+/*--------- presentacion ----------------*/
+.presentacion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  justify-content: flex-start;
+  align-content: space-between;
+  gap: 40px;
+}
+.presentacion span {
+  font-size: 40px;
+}
+.presentacion p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.presentacion img {
+  margin-left: 38px;
+}
+.presentacion-logo {
+  display: flex;
+  justify-content: center;
+}
+/*--------- Destacados ----------------*/
+.container {
+  background-color: #e6e9f7;
+  height: 544px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.container-destacada {
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.imagen-1 {
+  border: 8px solid white;
+  border-radius: 8px;
+  height: 264px;
+  background-size: cover;
+  position: absolute;
+  width: 90%;
+  background-position: 50%;
+  top: 0;
+
+  background-image: url(https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.imagen-2 {
+  border: 8px solid white;
+  border-radius: 8px;
+  height: 264px;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  background-position: bottom;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url(https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.container-destacada-img {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.container-destacada-vermas {
+  width: 45%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 0;
+}
+.container-destacada-vermas > div {
+  width: 100%;
+  height: 344px;
+  border: 8px solid white;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 4px;
+  background-image: url(./assets/destacada-3.jpeg);
+}
+
+.container .container-destacada img:nth-child(2) {
+  width: 840px;
+  z-index: 10;
+}
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 92%;
+  height: 424px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card-content {
+  box-shadow: 0px 6px 15px -2px rgb(0 0 0 / 46%);
+  -webkit-box-shadow: 0px 4px 20px 6px rgb(0 0 0 / 27%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
+  right: 0;
+  margin: 0;
+  height: 236px;
+  width: 460px;
+  text-align: left;
+  padding: 24px;
+  position: absolute;
+  z-index: 50;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+.card-content h3 {
+  font-size: 32px;
+}
+button {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 3px;
+  height: 3em;
+  padding: 0 3em;
+  border: none;
+  background-color: #c41b54;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: rgb(196, 27, 84);
+  background: linear-gradient(
+    90deg,
+    rgba(196, 27, 84, 1) 20%,
+    rgba(124, 7, 46, 1) 100%
+  );
+  transition: 0.2s;
+}
+
+button .label {
+  position: relative;
+}
+
+button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+button:hover::before {
+  height: 100%;
+}
+
+button:hover .icon {
+  top: 0;
+  opacity: 1;
+}
